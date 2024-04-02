@@ -31,6 +31,7 @@ This repo demos the installation of Nexus on the Ubuntu server and accessing Nex
 - Configuring Nexus service
   - sudo vi /etc/systemd/system/nexus.service
   -  add below script to run nexus as service
+=============================================================
 
     [Unit]
     Description=Nexus Repository Manager
@@ -48,7 +49,8 @@ This repo demos the installation of Nexus on the Ubuntu server and accessing Nex
     
     [Install]
     WantedBy=multi-user.target
-  
+
+=============================================================
   - sudo ln -s /opt/nexus-3.66.0-02/bin/nexus /etc/init.d/nexus
   - su - nexus
 - Running Nexus as nexus user:
@@ -62,9 +64,9 @@ This repo demos the installation of Nexus on the Ubuntu server and accessing Nex
   - netstat -lnpt
 
   ![image](https://github.com/hemu07/Nexus-demo/assets/90203539/e0f9adcb-e17d-4f25-9a2e-2dcdf8962e84)
-    we can see the service running on port 8081
-    Now in the new tab access the UI by giving :-
-    HTTP://public-IPv4-ofserver:8081
+  - we can see the service running on port 8081
+  - Now in the new tab access the UI by giving :-
+  - HTTP://public-IPv4-ofserver:8081
 
   ![image](https://github.com/hemu07/Nexus-demo/assets/90203539/fec73382-f23b-422c-9e68-a6fda63c96fc)
   - cat /opt/sonatype-work/nexus3/admin.password
