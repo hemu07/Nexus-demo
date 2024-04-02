@@ -70,3 +70,6 @@ This repo demos the installation of Nexus on the Ubuntu server and accessing Nex
   - cat /opt/sonatype-work/nexus3/admin.password
   - give this password to signin for the first time in UI , which will redirect to reset the password, once done we can see the below output:
   ![image](https://github.com/hemu07/Nexus-demo/assets/90203539/c1e220e7-66e1-4056-b988-4a0b2f089c57)
+  - check the logs using below command:
+  - tail -f /opt/sonatype-work/nexus3/log/nexus.log
+
