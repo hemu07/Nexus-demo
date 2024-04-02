@@ -51,6 +51,7 @@ This repo demos the installation of Nexus on the Ubuntu server and accessing Nex
     WantedBy=multi-user.target
 
 =============================================================
+
 link to the script: [Nexus-documentation} (https://help.sonatype.com/en/run-as-a-service.html#:~:text=%5BUnit%5D%0ADescription%3Dnexus%20service%0AAfter%3Dnetwork.target%0A%20%20%0A%5BService%5D%0AType%3Dforking%0ALimitNOFILE%3D65536%0AExecStart%3D/etc/init.d/nexus%20start%0AExecStop%3D/etc/init.d/nexus%20stop%20%0AUser%3Dnexus%0ARestart%3Don%2Dabort%0ATimeoutSec%3D600%0A%20%20%0A%5BInstall%5D%0AWantedBy%3Dmulti%2Duser.target)
 
   - sudo ln -s /opt/nexus-3.66.0-02/bin/nexus /etc/init.d/nexus
